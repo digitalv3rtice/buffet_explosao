@@ -112,6 +112,137 @@ body, html {
     object-fit: cover; /* Faz o vídeo cobrir toda a área sem deformar */
     z-index: 1;
 }
+.wrap-video-mo-01 {
+  position: relative;
+}
+
+.video-mo-01 video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*[ Modal video depoimento ]
+-----------------------------------------------------------*/
+.modal[id^="modal-video-dep"] {
+  background-color: rgba(0,0,0,0.8);
+  z-index: 1250;
+  padding: 0px !important;
+}
+
+.modal[id^="modal-video-dep"] .modal-dialog {
+  max-width: 100% !important;
+  height: 100% !important;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#modal-video-dep01 {
+  background-color: rgba(0,0,0,0.8);
+  z-index: 1250;
+  padding: 0px !important;
+}
+
+#modal-video-dep01 .modal-dialog {
+  max-width: 100% !important;
+  height: 100% !important;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.video-mo-dep01 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  -moz-transition: all 2s;
+  transition: all 2s;
+}
+
+.video-mo-dep01 iframe,
+.video-mo-dep01 video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.close-mo-video-dep01 {
+  font-size: 50px;
+  color: white;
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1250;
+  width: 60px;
+  height: 60px;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.close-mo-video-dep01:hover {
+  opacity: 1;
+}
+
+/* Ícone play sobre a imagem */
+.play-icon-blo1 {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.play-icon-blo1:hover svg circle {
+  fill: rgba(236, 29, 37, 0.75);
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.close-mo-video-dep {
+  font-size: 50px;
+  color: white;
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1250;
+  width: 60px;
+  height: 60px;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.close-mo-video-dep:hover { opacity: 1; }
 /* ------------------------------------ */
 a {
 	font-family: Montserrat;

@@ -89,25 +89,61 @@
         e.stopPropagation();
     });
 
-
-    /*[ Play video 01]
+    /*[ Play video 01 ]
     ===========================================================*/
-    var srcOld = $('.video-mo-01').children('iframe').attr('src');
+    var $videoMo01 = $('.video-mo-01').children('video');
 
-    $('[data-target="#modal-video-01"]').on('click',function(){
-        $('.video-mo-01').children('iframe')[0].src += "&autoplay=1";
-
-        setTimeout(function(){
-            $('.video-mo-01').css('opacity','1');
-        },300);      
+    $('[data-target="#modal-video-01"]').on('click', function () {
+        setTimeout(function () {
+            $videoMo01[0].play();
+            $('.video-mo-01').css('opacity', '1');
+        }, 300);
     });
 
-    $('[data-dismiss="modal"]').on('click',function(){
-        $('.video-mo-01').children('iframe')[0].src = srcOld;
-        $('.video-mo-01').css('opacity','0');
+    $('#modal-video-01').on('hidden.bs.modal', function () {
+        $videoMo01[0].pause();
+        $videoMo01[0].currentTime = 0;
+        $('.video-mo-01').css('opacity', '0');
     });
-    
 
+/*[ Play video depoimentos — genérico ]
+===========================================================*/
+    $('.modal[id^="modal-video-dep"]').on('show.bs.modal', function () {
+        var $container = $(this).find('.video-mo-dep');
+        var src = $container.data('src');
+        var type = $container.data('type'); // "local" ou "youtube"
+
+        if (!$container.children().length) {
+            if (type === 'local') {
+                $container.html(
+                    '<video src="' + src + '" controls autoplay ' +
+                    'style="position:absolute;top:0;left:0;width:100%;height:100%;background:#000;">' +
+                    '</video>'
+                );
+            } else {
+                $container.html(
+                    '<iframe src="' + src + '&autoplay=1" allowfullscreen ' +
+                    'style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>'
+                );
+            }
+        }
+
+        setTimeout(function () {
+            $container.css('opacity', '1');
+        }, 300);
+    });
+
+    $('.modal[id^="modal-video-dep"]').on('hidden.bs.modal', function () {
+        var $container = $(this).find('.video-mo-dep');
+        var $video = $container.find('video');
+
+        if ($video.length) {
+            $video[0].pause();
+            $video[0].currentTime = 0;
+        }
+
+        $container.css('opacity', '0').empty();
+    });
     /*[ Fixed Header ]
     ===========================================================*/
     var header = $('header');
