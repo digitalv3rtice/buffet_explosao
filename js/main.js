@@ -88,7 +88,55 @@
     $('.daterangepicker').on('click',function(e){ 
         e.stopPropagation();
     });
+    /*[ Formulário WhatsApp ]
+===========================================================*/
+    $('#btn-whatsapp').on('click', function () {
+        var campo1 = $('#campo1').val().trim();
+        var campo2 = $('#campo2').val().trim();
+        var campo3 = $('#campo3').val().trim();
 
+        if (!campo1 || !campo2 || !campo3) {
+            alert('Por favor, preencha todos os campos.');
+            return;
+        }
+
+        var numero = '5521987436785'; // Troque pelo seu número com DDI+DDD, sem espaços ou símbolos
+        var mensagem = 'Informação 1: ' + campo1 + '%0A' +
+                       'Informação 2: ' + campo2 + '%0A' +
+                       'Informação 3: ' + campo3;
+
+        window.open('https://wa.me/' + numero + '?text=' + mensagem, '_blank');
+    });
+    /*[ Play videos galeria ]
+    ===========================================================*/
+    $('.modal[id^="modal-video-gal"]').on('show.bs.modal', function () {
+        var $container = $(this).find('.video-mo-dep');
+        var src = $container.data('src');
+
+        if (!$container.children().length) {
+            $container.html(
+                '<video src="' + src + '" controls autoplay ' +
+                'style="position:absolute;top:0;left:0;width:100%;height:100%;background:#000;">' +
+                '</video>'
+            );
+        }
+
+        setTimeout(function () {
+            $container.css('opacity', '1');
+        }, 300);
+    });
+
+    $('.modal[id^="modal-video-gal"]').on('hidden.bs.modal', function () {
+        var $container = $(this).find('.video-mo-dep');
+        var $video = $container.find('video');
+
+        if ($video.length) {
+            $video[0].pause();
+            $video[0].currentTime = 0;
+        }
+
+        $container.css('opacity', '0').empty();
+    });
     /*[ Play video 01 ]
     ===========================================================*/
     var $videoMo01 = $('.video-mo-01').children('video');
