@@ -42,7 +42,7 @@
 					<!-- Logo -->
 					<div class="logo">
 						<a href="index.html">
-							<!--<img src="images/icons/logo.png" alt="IMG-LOGO" data-logofixed="images/icons/logo2.png"> -->
+							<img src="images/icons/logo.svg" alt="IMG-LOGO" data-logofixed="images/icons/logo2.svg">
 						</a>
 					</div>
 
@@ -52,10 +52,6 @@
 							<ul class="main_menu">
 								<li>
 									<a href="index.html">Página Inicial</a>
-								</li>
-
-								<li>
-									<a href="servico.html">Serviços</a>
 								</li>
 
 								<li>
@@ -75,9 +71,8 @@
 
 					<!-- Social -->
 					<div class="social flex-w flex-l-m p-r-20">
-						<a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-facebook m-l-21" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-instagram m-l-21" aria-hidden="true"></i></a>
+						<a href="contato.html"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+						<a href="https://www.instagram.com/buffet_explosao_de_sabores/"><i class="fa fa-instagram m-l-21" aria-hidden="true"></i></a>
 
 						<button class="btn-show-sidebar m-l-33 trans-0-4"></button>
 					</div>
@@ -95,10 +90,6 @@
 		<ul class="menu-sidebar p-t-95 p-b-70">
 			<li class="t-center m-b-13">
 				<a href="index.html" class="txt19">Página Inicial</a>
-			</li>
-
-			<li class="t-center m-b-13">
-				<a href="servico.html" class="txt19">Serviços</a>
 			</li>
 
 			<li class="t-center m-b-13">
@@ -137,23 +128,36 @@
 			<form class="wrap-form-reservation size22 m-l-r-auto" id="form-whatsapp">
 				<div class="row">
 					<div class="col-md-4">
-						<span class="txt9">Informação 1</span>
+						<span class="txt9">Nome</span>
 						<div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
-							<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" id="campo1" placeholder="Informação 1">
+							<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" id="campo1" placeholder="Seu nome">
 						</div>
 					</div>
 
 					<div class="col-md-4">
-						<span class="txt9">Informação 2</span>
+						<span class="txt9">Tipo de serviço</span>
 						<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
-							<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" id="campo2" placeholder="Informação 2">
+							<select class="bo-rad-10 sizefull txt10 p-l-20" id="campo2" name="campo2">
+								<option value="" disabled selected>Escolha uma opção</option>
+								<option value="coffe break">Coffe Break</option>
+								<option value="churrasco">Churrasco</option>
+								<option value="feijoada">Feijoada</option>
+								<option value="jantar">Jantar</option>
+								<option value="outro">Outro/Dúvida Geral</option>
+
+
+							</select>
 						</div>
 					</div>
 
 					<div class="col-md-4">
-						<span class="txt9">Informação 3</span>
+						<span class="txt9">O que você precisa?</span>
 						<div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
-							<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" id="campo3" placeholder="Informação 3">
+							<select class="bo-rad-10 sizefull txt10 p-l-20" id="campo3" name="campo3">
+								<option value="" disabled selected>Escolha uma opção</option>
+								<option value="pedir orçamento">Pedir orçamento</option>
+								<option value="tirar uma dúvida">Tirar uma dúvida</option>
+							</select>
 						</div>
 					</div>
 				</div>
@@ -169,24 +173,6 @@
 				<div class="col-sm-8 col-md-4 col-lg-4 m-l-r-auto p-t-30">
 					<div class="dis-flex m-l-23">
 						<div class="p-r-40 p-t-6">
-							<img src="images/icons/map-icon.png" alt="IMG-ICON">
-						</div>
-
-						<div class="flex-col-l">
-							<span class="txt5 p-b-10">
-								Local
-							</span>
-
-							<span class="txt23 size38">
-								8th floor, 379 Hudson St, New York, NY 10018
-							</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-8 col-md-3 col-lg-4 m-l-r-auto p-t-30">
-					<div class="dis-flex m-l-23">
-						<div class="p-r-40 p-t-6">
 							<img src="images/icons/phone-icon.png" alt="IMG-ICON">
 						</div>
 
@@ -197,13 +183,13 @@
 							</span>
 
 							<span class="txt23 size38">
-								(+21) 9 9999-9999
+								(21) 97187-6482
 							</span>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-sm-8 col-md-5 col-lg-4 m-l-r-auto p-t-30">
+				<div class="col-sm-8 col-md-4 col-lg-4 m-l-r-auto p-t-30">
 					<div class="dis-flex m-l-23">
 						<div class="p-r-40 p-t-6">
 							<img src="images/icons/clock-icon.png" alt="IMG-ICON">
@@ -216,7 +202,7 @@
 							</span>
 
 							<span class="txt23 size38">
-								09:30 AM – 11:00 PM <br/>Every Day
+								09h – 19h 
 							</span>
 						</div>
 					</div>
@@ -228,113 +214,18 @@
 
 	<!-- Footer -->
 	<footer class="bg1">
-		<div class="container p-t-40 p-b-70">
-			<div class="row">
-				<div class="col-sm-6 col-md-4 p-t-50">
-					<!-- - -->
-					<h4 class="txt13 m-b-33">
-						Contatos
-					</h4>
-
-					<ul class="m-b-70">
-						<li class="txt14 m-b-14">
-							<i class="fa fa-map-marker fs-16 dis-inline-block size19" aria-hidden="true"></i>
-							8th floor, 379 Hudson St, New York, NY 10018
-						</li>
-
-						<li class="txt14 m-b-14">
-							<i class="fa fa-phone fs-16 dis-inline-block size19" aria-hidden="true"></i>
-							(+1) 96 716 6879
-						</li>
-
-						<li class="txt14 m-b-14">
-							<i class="fa fa-envelope fs-13 dis-inline-block size19" aria-hidden="true"></i>
-							contact@site.com
-						</li>
-					</ul>
-				</div>
-
-				<div class="col-sm-6 col-md-4 p-t-50">
-					<!-- - -->
-					<div class="m-b-25">
-						<h4 class="txt13 m-b-32">
-						Horário de funcionamento
-					</h4>
-
-					<ul>
-						<li class="txt14">
-							09:30 AM – 11:00 PM
-						</li>
-
-						<li class="txt14">
-							Every Day
-						</li>
-					</ul>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4 p-t-50">
-					<!-- - -->
-					<h4 class="txt13 m-b-33">
-						Redes Sociais
-					</h4>
-
-					<div class="m-b-25">
-						<span class="fs-13 color2 m-r-5">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</span>
-						<a href="#" class="txt15">
-							@colorlib
-						</a>
-
-						<p class="txt14 m-b-18">
-							Activello is a good option. It has a slider built into that displays the featured image in the slider.
-							<a href="#" class="txt15">
-								https://buff.ly/2zaSfAQ
-							</a>
-						</p>
-
-						<span class="txt16">
-							21 Dec 2017
-						</span>
-					</div>
-
-					<div>
-						<span class="fs-13 color2 m-r-5">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</span>
-						<a href="#" class="txt15">
-							@colorlib
-						</a>
-
-						<p class="txt14 m-b-18">
-							Activello is a good option. It has a slider built into that displays
-							<a href="#" class="txt15">
-								https://buff.ly/2zaSfAQ
-							</a>
-						</p>
-
-						<span class="txt16">
-							21 Dec 2017
-						</span>
-					</div>
-				</div>
-
-
-			</div>
-		</div>
-
 		<div class="end-footer bg2">
 			<div class="container">
 				<div class="flex-sb-m flex-w p-t-22 p-b-22">
 					<div class="p-t-5 p-b-5">
-						<a href="#" class="fs-15 c-white"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
-						<a href="#" class="fs-15 c-white"><i class="fa fa-facebook m-l-18" aria-hidden="true"></i></a>
-						<a href="#" class="fs-15 c-white"><i class="fa fa-twitter m-l-18" aria-hidden="true"></i></a>
+						<a href="contato.html" class="fs-15 c-white"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+						<a href="https://www.instagram.com/buffet_explosao_de_sabores/" class="fs-15 c-white"><i class="fa fa-instagram m-l-18" aria-hidden="true"></i></a>
 					</div>
 
 					<div class="txt17 p-r-20 p-t-5 p-b-5">
-						Copyright &copy; 2018 All rights reserved  |  This template is made by <a href="https://colorlib.com" target="_blank">Colorlib</a> | Vértice Digital
+   						 &copy; 2026 Buffet Explosão de Sabores. Criado por <a href="https://colorlib.com" target="_blank" rel="noopener">Colorlib</a> e editado por Vértice Digital.
 					</div>
+
 				</div>
 			</div>
 		</div>
