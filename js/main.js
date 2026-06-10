@@ -101,9 +101,7 @@
         }
 
         var numero = '5521987436785'; // Troque pelo seu número com DDI+DDD, sem espaços ou símbolos
-        var mensagem = 'Informação 1: ' + campo1 + '%0A' +
-                       'Informação 2: ' + campo2 + '%0A' +
-                       'Informação 3: ' + campo3;
+        var mensagem = 'Olá! Meu nome é ' + campo1 + '. Estou entrando em contato sobre o serviço ' + campo2 + ' pois gostaria de ' + campo3 + '.';
 
         window.open('https://wa.me/' + numero + '?text=' + mensagem, '_blank');
     });
