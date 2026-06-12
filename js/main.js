@@ -88,6 +88,7 @@
     $('.daterangepicker').on('click',function(e){ 
         e.stopPropagation();
     });
+
     /*[ Formulário WhatsApp ]
 ===========================================================*/
     $('#btn-whatsapp').on('click', function () {
@@ -105,6 +106,7 @@
 
         window.open('https://wa.me/' + numero + '?text=' + mensagem, '_blank');
     });
+    
     /*[ Play videos galeria ]
     ===========================================================*/
     $('.modal[id^="modal-video-gal"]').on('show.bs.modal', function () {
@@ -135,6 +137,7 @@
 
         $container.css('opacity', '0').empty();
     });
+    
     /*[ Play video 01 ]
     ===========================================================*/
     var $videoMo01 = $('.video-mo-01').children('video');
