@@ -115,7 +115,7 @@
 
         if (!$container.children().length) {
             $container.html(
-                '<video src="' + src + '" controls autoplay ' +
+                '<video src="' + src + '" controls autoplay muted playsinline ' +
                 'style="position:absolute;top:0;left:0;width:100%;height:100%;background:#000;">' +
                 '</video>'
             );
@@ -165,13 +165,13 @@
         if (!$container.children().length) {
             if (type === 'local') {
                 $container.html(
-                    '<video src="' + src + '" controls autoplay ' +
+                    '<video src="' + src + '" controls autoplay muted playsinline ' +
                     'style="position:absolute;top:0;left:0;width:100%;height:100%;background:#000;">' +
                     '</video>'
                 );
             } else {
                 $container.html(
-                    '<iframe src="' + src + '&autoplay=1" allowfullscreen ' +
+                    '<iframe src="' + src + '&autoplay=1&mute=1" allow="autoplay; encrypted-media" allowfullscreen ' +
                     'style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>'
                 );
             }
