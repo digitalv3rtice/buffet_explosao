@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Empresa - Buffet Explosão de Sabores</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/logo.svg"/>
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="vendor/lightbox2/css/lightbox.min.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<style>
+		/* ── Estilos específicos da página corporativa ── */
+		.corp-icon-box {
+			display: flex;
+			align-items: flex-start;
+			gap: 22px;
+			padding: 28px 0;
+			border-bottom: 1px solid rgba(255,255,255,0.07);
+		}
+		.corp-icon-box:last-child {
+			border-bottom: none;
+		}
+		.corp-icon-circle {
+			width: 52px;
+			min-width: 52px;
+			height: 52px;
+			border-radius: 50%;
+			background-color: #ec1d25;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 20px;
+			color: #fff;
+		}
+		.corp-icon-box h5 {
+			font-family: Poppins, sans-serif;
+			font-weight: 700;
+			font-size: 16px;
+			color: #222222;
+			margin-bottom: 6px;
+		}
+		.corp-icon-box p {
+			font-family: Poppins, sans-serif;
+			font-size: 14px;
+			color: #666666;
+			line-height: 1.75;
+			margin: 0;
+		}
+		.badge-nfe {
+			display: inline-flex;
+			align-items: center;
+			gap: 7px;
+			background-color: #111111;
+			color: #fff;
+			font-family: Montserrat, sans-serif;
+			font-weight: 700;
+			font-size: 11px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			padding: 8px 18px;
+			border-radius: 8px;
+			margin-top: 18px;
+		}
+		.badge-nfe i { color: #ec1d25; font-size: 14px; }
+
+		.wrap-corpo-left  { padding-right: 30px; }
+		.wrap-corpo-right { padding-left: 30px; }
+
+		.section-center-block {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 360px;
+		}
+
+		.section-center-block .wrap-corpo-right {
+			max-width: 680px;
+			margin: 0 auto;
+		}
+
+		.bg-access-prev {
+			background-image: url('images/empresa2.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			background-color: transparent;
+			color: #fff;
+		}
+
+		.bg-access-prev .tit2,
+		.bg-access-prev .tit3,
+		.bg-access-prev .size3,
+		.bg-access-prev .btn3,
+		.bg-access-prev a,
+		.bg-access-prev p {
+			color: #fff !important;
+		}
+
+		@media (max-width: 767px) {
+			.wrap-corpo-left,
+			.wrap-corpo-right { padding: 0; }
+			.corp-icon-box { flex-direction: column; gap: 12px; }
+			.section-center-block { min-height: auto; padding-top: 60px; padding-bottom: 60px; }
+		}
+	</style>
+</head>
+<body class="animsition">
+
+	<!-- Header -->
+	<header>
+		<div class="wrap-menu-header gradient1 trans-0-4">
+			<div class="container h-full">
+				<div class="wrap_header trans-0-3">
+					<div class="logo">
+						<a href="index.html">
+							<img src="images/icons/logo.svg" alt="IMG-LOGO" data-logofixed="images/icons/logo2.svg">
+						</a>
+					</div>
+
+					<div class="wrap_menu p-l-45 p-l-0-xl">
+						<nav class="menu">
+							<ul class="main_menu">
+								<li><a href="index.html">Página Inicial</a></li>
+								<li><a href="galeria.html">Galeria</a></li>
+								<li><a href="sobre.html">Sobre</a></li>
+								<li class="sale-noti"><a href="contrato.html">Empresa</a></li>
+								<li><a href="servico.html">Cardápio</a></li>
+								<li><a href="contato.html">Contato</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="social flex-w flex-l-m p-r-20">
+						<a href="contato.html"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+						<a href="https://www.instagram.com/buffet_explosao_de_sabores/" target="_blank"><i class="fa fa-instagram m-l-21" aria-hidden="true"></i></a>
+						<button class="btn-show-sidebar m-l-33 trans-0-4"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Sidebar -->
+	<aside class="sidebar trans-0-4">
+		<button class="btn-hide-sidebar ti-close color0-hov trans-0-4"></button>
+		<ul class="menu-sidebar p-t-95 p-b-70">
+			<li class="t-center m-b-13"><a href="index.html" class="txt19">Página Inicial</a></li>
+			<li class="t-center m-b-13"><a href="galeria.html" class="txt19">Galeria</a></li>
+			<li class="t-center m-b-13"><a href="sobre.html" class="txt19">Sobre</a></li>
+			<li class="t-center m-b-13"><a href="contrato.html" class="txt19">Empresa</a></li>
+			<li class="t-center m-b-13"><a href="servico.html" class="txt19">Cardápio</a></li>
+			<li class="t-center m-b-33"><a href="contato.html" class="txt19">Contato</a></li>
+		</ul>
+	</aside>
+
+	<!-- Title Page -->
+	<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(images/empresa1.png);">
+		
+	</section>
+
+	<!-- Intro -->
+	<section class="bg2-pattern p-t-116 p-b-110 t-center p-l-15 p-r-15">
+		<span class="tit2 t-center">
+			Transparência e Parceria
+		</span>
+
+		<h3 class="tit3 t-center m-b-35 m-t-5">
+			Área da Empresa
+		</h3>
+
+		<p class="t-center size32 m-l-r-auto">
+			No <strong>Buffet Explosão de Sabores</strong>, sabemos que a organização de um evento corporativo exige pontualidade, profissionalismo e conformidade com as regras de compliance. Para agilizar o processo do seu departamento de compras, RH ou jurídico, disponibilizamos abaixo o acesso antecipado às nossas diretrizes contratuais e fiscais.
+		</p>
+	</section>
+
+	<!-- NF-e + Contrato -->
+	<section class="bg1-pattern p-t-120 p-b-105 bg-access-prev">
+		<div class="container">
+			<div class="row section-center-block">
+				<div class="col-md-8 col-lg-6 p-t-45 p-b-30">
+					<div class="wrap-corpo-right t-center">
+						<span class="tit2 t-center">
+							Acesso Prévio
+						</span>
+
+						<h3 class="tit3 t-center m-b-35 m-t-5">
+							Diretrizes
+						</h3>
+
+						<p class="t-center m-b-22 size3 m-l-r-auto">
+							Ganhe tempo na aprovação jurídica. Visualize ou baixe nosso modelo padrão de contrato para conhecer nossos prazos, políticas de cancelamento e regras de montagem.
+						</p>
+
+						<div class="flex-c-m p-t-10">
+							<a href="documentos/minuta_contrato_padrao.pdf" target="_blank" class="btn3 flex-c-m size20 txt6 trans-0-4">
+								<i class="fa fa-file-pdf-o m-r-10" aria-hidden="true"></i> Baixar modelo de contrato
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- O que está no contrato -->
+	<section class="bg2-pattern p-t-100 p-b-90 p-l-15 p-r-15">
+		<div class="container">
+			<h2 class="tit3 t-center m-b-55 m-t-5">
+				cobertura do contrato
+			</h2>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="corp-icon-box">
+						<div class="corp-icon-circle">
+							<i class="fa fa-clock-o" aria-hidden="true"></i>
+						</div>
+						<div>
+							<h5>Prazos e cronogramas</h5>
+							<p>Confirmação de reserva, entrega de materiais e prazo mínimo para contratação do serviço.</p>
+						</div>
+					</div>
+
+					<div class="corp-icon-box">
+						<div class="corp-icon-circle">
+							<i class="fa fa-ban" aria-hidden="true"></i>
+						</div>
+						<div>
+							<h5>Política de cancelamento</h5>
+							<p>Condições e prazos para cancelamento ou reagendamento sem penalidade financeira.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="corp-icon-box">
+						<div class="corp-icon-circle">
+							<i class="fa fa-wrench" aria-hidden="true"></i>
+						</div>
+						<div>
+							<h5>Regras de montagem e logística</h5>
+							<p>Tempo de montagem, desmontagem e requisitos de espaço e infraestrutura no local do evento.</p>
+						</div>
+					</div>
+
+					<div class="corp-icon-box">
+						<div class="corp-icon-circle">
+							<i class="fa fa-money" aria-hidden="true"></i>
+						</div>
+						<div>
+							<h5>Condições de pagamento</h5>
+							<p>Formas aceitas, parcelamento, sinal e emissão de NF-e ao término do serviço prestado.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA -->
+	<div class="section-signup bg1-pattern p-t-85 p-b-85">
+		<div class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5">
+			<a href="contato.html" class="btn3 flex-c-m size20 txt6 trans-0-4 m-10">
+				Solicitar Orçamento
+			</a>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="bg1">
+		<div class="end-footer bg2">
+			<div class="container">
+				<div class="flex-sb-m flex-w p-t-22 p-b-22">
+					<div class="p-t-5 p-b-5">
+						<a href="contato.html" class="fs-15 c-white"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+						<a href="https://www.instagram.com/buffet_explosao_de_sabores/" class="fs-15 c-white"><i class="fa fa-instagram m-l-18" aria-hidden="true"></i></a>
+					</div>
+
+					<div class="txt17 p-r-20 p-t-5 p-b-5">
+						&copy; 2026 Buffet Explosão de Sabores. Criado por <a href="https://colorlib.com" target="_blank" rel="noopener">Colorlib</a> e editado por Vértice Digital.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Back to top -->
+	<div class="btn-back-to-top bg0-hov" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</span>
+	</div>
+
+	<div id="dropDownSelect1"></div>
+
+	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+	<script type="text/javascript" src="vendor/daterangepicker/moment.min.js"></script>
+	<script type="text/javascript" src="vendor/daterangepicker/daterangepicker.js"></script>
+	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/slick-custom.js"></script>
+	<script type="text/javascript" src="vendor/parallax100/parallax100.js"></script>
+	<script type="text/javascript">
+		$('.parallax100').parallax100();
+	</script>
+	<script type="text/javascript" src="vendor/countdowntime/countdowntime.js"></script>
+	<script type="text/javascript" src="vendor/lightbox2/js/lightbox.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
