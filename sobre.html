@@ -4,84 +4,167 @@
 	<title>Sobre</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="images/icons/logo.svg"/>
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/lightbox2/css/lightbox.min.css">
-<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
+
+<style>
+/* ===== Onde Atuamos ===== */
+.section-cobertura {
+	background-color: #f9f9f9;
+	padding: 100px 15px;
+}
+.cobertura-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 32px;
+	margin-top: 55px;
+}
+@media (max-width: 768px) { .cobertura-grid { grid-template-columns: 1fr; } }
+.cobertura-card {
+	background: #fff;
+	border-radius: 4px;
+	padding: 40px 32px;
+	text-align: center;
+	border-top: 3px solid #d61c22;
+	box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+	transition: box-shadow 0.3s;
+}
+.cobertura-card:hover { box-shadow: 0 6px 30px rgba(0,0,0,0.12); }
+.cobertura-icon {
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	background: #d61c22;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto 24px;
+}
+.cobertura-icon i { color: #fff; font-size: 22px; }
+.cobertura-card h4 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	color: #222;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	margin-bottom: 14px;
+}
+.cobertura-card p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	color: #666;
+	line-height: 1.9;
+	margin: 0;
+}
+
+
+
+/* ===== Duracao do Evento ===== */
+.section-duracao {
+	background-color: #222;
+	padding: 100px 15px;
+}
+.duracao-box {
+	max-width: 780px;
+	margin: 55px auto 0;
+	background: #2a2a2a;
+	border-radius: 4px;
+	padding: 50px 48px;
+	border-left: 5px solid #d61c22;
+	box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+.duracao-destaque {
+	display: flex;
+	align-items: center;
+	gap: 22px;
+	margin-bottom: 30px;
+}
+.duracao-num {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size: 80px;
+	line-height: 1;
+	color: #d61c22;
+}
+.duracao-label {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size: 13px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	line-height: 1.5;
+}
+.duracao-desc {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: #bbb;
+	line-height: 1.9;
+	margin-bottom: 24px;
+	border-top: 1px solid #3a3a3a;
+	padding-top: 24px;
+}
+.duracao-nota {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+	background: #1e1e1e;
+	border: 1px solid #3a3a3a;
+	border-radius: 4px;
+	padding: 16px 20px;
+}
+.duracao-nota i { color: #d61c22; font-size: 16px; margin-top: 3px; flex-shrink: 0; }
+.duracao-nota p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	color: #999;
+	line-height: 1.8;
+	margin: 0;
+}
+</style>
 </head>
 <body class="animsition">
 
 	<!-- Header -->
 	<header>
-		<!-- Header desktop -->
 		<div class="wrap-menu-header gradient1 trans-0-4">
 			<div class="container h-full">
 				<div class="wrap_header trans-0-3">
-					<!-- Logo -->
 					<div class="logo">
 						<a href="index.html">
 							<img src="images/icons/logo.svg" alt="IMG-LOGO" data-logofixed="images/icons/logo2.svg">
 						</a>
 					</div>
 
-					<!-- Menu -->
 					<div class="wrap_menu p-l-45 p-l-0-xl">
 						<nav class="menu">
 							<ul class="main_menu">
-								<li>
-									<a href="index.html">Página Inicial</a>
-								</li>
-
-								<li>
-									<a href="galeria.html">Galeria</a>
-								</li>
-
-								<li>
-									<a href="sobre.html">Sobre</a>
-								</li>
-							<li>
-								<a href="contrato.html">Contrato</a>
-							</li>
-							<li>
-								
-								</li>
-								<li>
-									<a href="servico.html">Cardápio</a>
-								</li>
-								<li>
-									<a href="contato.html">Contato</a>
-								</li>
+								<li><a href="index.html">Página Inicial</a></li>
+								<li><a href="galeria.html">Galeria</a></li>
+								<li><a href="sobre.html">Sobre</a></li>
+								<li><a href="contrato.html">Contrato</a></li>
+								<li></li>
+								<li><a href="servico.html">Cardápio</a></li>
+								<li><a href="contato.html">Contato</a></li>
 							</ul>
 						</nav>
 					</div>
 
-					<!-- Social -->
 					<div class="social flex-w flex-l-m p-r-20">
 						<a href="contato.html"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
 						<a href="https://www.instagram.com/buffet_explosao_de_sabores/" target="_blank"><i class="fa fa-instagram m-l-21" aria-hidden="true"></i></a>
-
 						<button class="btn-show-sidebar m-l-33 trans-0-4"></button>
 					</div>
 				</div>
@@ -91,55 +174,26 @@
 
 	<!-- Sidebar -->
 	<aside class="sidebar trans-0-4">
-		<!-- Button Hide sidebar -->
 		<button class="btn-hide-sidebar ti-close color0-hov trans-0-4"></button>
-
-		<!-- - -->
 		<ul class="menu-sidebar p-t-95 p-b-70">
-			<li class="t-center m-b-13">
-				<a href="index.html" class="txt19">Página Inicial</a>
-			</li>
-
-			<li class="t-center m-b-13">
-				<a href="galeria.html" class="txt19">Galeria</a>
-			</li>
-
-			<li class="t-center m-b-13">
-				<a href="sobre.html" class="txt19">Sobre</a>
-			</li>
-
-			<li class="t-center m-b-13">
-				<a href="contrato.html" class="txt19">Contrato</a>
-			</li>
-
-			<li class="t-center m-b-13">
-				<a href="servico.html" class="txt19">Cardápio</a>
-			</li>
-
-			<li class="t-center m-b-33">
-				<a href="contato.html" class="txt19">Contato</a>
-			</li>
+			<li class="t-center m-b-13"><a href="index.html" class="txt19">Página Inicial</a></li>
+			<li class="t-center m-b-13"><a href="galeria.html" class="txt19">Galeria</a></li>
+			<li class="t-center m-b-13"><a href="sobre.html" class="txt19">Sobre</a></li>
+			<li class="t-center m-b-13"><a href="contrato.html" class="txt19">Contrato</a></li>
+			<li class="t-center m-b-13"><a href="servico.html" class="txt19">Cardápio</a></li>
+			<li class="t-center m-b-33"><a href="contato.html" class="txt19">Contato</a></li>
 		</ul>
 	</aside>
 
-<!-- Title Page -->
+	<!-- Title Page -->
 	<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(images/bg-about01.svg);">
-		<h2 class="tit6 t-center">
-			Sobre nós
-		</h2>
+		<h2 class="tit6 t-center">Sobre nós</h2>
 	</section>
-
 
 	<!-- Our Story -->
 	<section class="bg2-pattern p-t-116 p-b-110 t-center p-l-15 p-r-15">
-		<span class="tit2 t-center">
-			Explosão de Sabores
-		</span>
-
-		<h3 class="tit3 t-center m-b-35 m-t-5">
-			Nossa história
-		</h3>
-
+		<span class="tit2 t-center">Explosão de Sabores</span>
+		<h3 class="tit3 t-center m-b-35 m-t-5">Nossa história</h3>
 		<p class="t-center size32 m-l-r-auto">
 			Se você procura confiança, credibilidade e uma gastronomia de primeira linha, encontrou o lugar certo. Nós acreditamos que um grande evento nasce da união entre segurança e paixão pelo que fazemos. Por isso, contamos com uma equipe de profissionais altamente qualificados, prontos para cuidar de cada detalhe.
 			O nosso compromisso é fazer do seu evento um momento de total alegria, tranquilidade e paz. Deixe a preocupação conosco e prepare-se para viver, junto com seus convidados, uma verdadeira Explosão de Sabores.
@@ -149,14 +203,8 @@
 	<!-- Video -->
 	<section class="section-video parallax100" style="background-image: url(images/bg-about02.svg);">
 		<div class="content-video t-center p-t-225 p-b-250">
-			<span class="tit2 p-l-15 p-r-15">
-				Explosão de Sabores
-			</span>
-
-			<h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">
-				em ação
-			</h3>
-
+			<span class="tit2 p-l-15 p-r-15">Explosão de Sabores</span>
+			<h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">em ação</h3>
 			<div class="btn-play ab-center size16 hov-pointer m-l-r-auto m-t-43 m-b-33" data-toggle="modal" data-target="#modal-video-01">
 				<div class="flex-c-m sizefull bo-cir bgwhite color1 hov1 trans-0-4">
 					<i class="fa fa-play fs-18 m-l-2" aria-hidden="true"></i>
@@ -165,28 +213,19 @@
 		</div>
 	</section>
 
-
-	<!-- Delicious & Romantic-->
+	<!-- Delicious & Romantic -->
 	<section class="bg1-pattern p-t-120 p-b-105">
 		<div class="container">
-			<!-- Delicious -->
 			<div class="row">
 				<div class="col-md-6 p-t-45 p-b-30">
 					<div class="wrap-text-delicious t-center">
-						<span class="tit2 t-center">
-							O tempero certo para o seu						
-						</span>
-
-						<h3 class="tit3 t-center m-b-35 m-t-5">
-							GRANDE DIA
-						</h3>
-
+						<span class="tit2 t-center">O tempero certo para o seu</span>
+						<h3 class="tit3 t-center m-b-35 m-t-5">GRANDE DIA</h3>
 						<p class="t-center m-b-22 size3 m-l-r-auto">
 							Levamos comida de verdade, feita com cuidado e sabor, junto com um serviço impecável. Tudo pensado para que cada detalhe da sua celebração se transforme em uma lembrança inesquecível.
 						</p>
 					</div>
 				</div>
-
 				<div class="col-md-6 p-b-30">
 					<div class="wrap-pic-delicious size2 bo-rad-10 hov-img-zoom m-l-r-auto">
 						<img src="images/our-story-01.jpg" alt="IMG-OUR">
@@ -194,29 +233,81 @@
 				</div>
 			</div>
 
-
-			<!-- Romantic -->
 			<div class="row p-t-170">
 				<div class="col-md-6 p-b-30">
 					<div class="wrap-pic-romantic size2 bo-rad-10 hov-img-zoom m-l-r-auto">
 						<img src="images/cf.jpg" alt="IMG-OUR">
 					</div>
 				</div>
-
 				<div class="col-md-6 p-t-45 p-b-30">
 					<div class="wrap-text-romantic t-center">
-						<span class="tit2 t-center">
-							Do planejamento ao 
-						</span>
-
-						<h3 class="tit3 t-center m-b-35 m-t-5">
-							BRINDE FINAL
-						</h3>
-
+						<span class="tit2 t-center">Do planejamento ao</span>
+						<h3 class="tit3 t-center m-b-35 m-t-5">BRINDE FINAL</h3>
 						<p class="t-center m-b-22 size3 m-l-r-auto">
 							Já temos tudo prontinho para você: coffee break para aquele lanche especial, jantar completo, churrasco de dar água na boca e feijoada de respeito. É só escolher o que mais combina com a sua festa e vir realizar o evento dos seus sonhos com a gente.
 						</p>
 					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- ============================= ONDE ATUAMOS ============================= -->
+	<section class="section-cobertura">
+		<div class="container">
+			<div class="t-center">
+				<span class="tit2">Atendemos você</span>
+				<h3 class="tit3 m-t-5 m-b-0">Onde Atuamos</h3>
+			</div>
+
+			<div class="cobertura-grid">
+
+				<div class="cobertura-card">
+					<div class="cobertura-icon"><i class="fa fa-map-marker"></i></div>
+					<h4>Zona Oeste</h4>
+					<p>Barra da Tijuca &middot; Recreio dos Bandeirantes &middot; Jacarepaguá &middot; Campo Grande e regiões vizinhas</p>
+				</div>
+
+				<div class="cobertura-card">
+					<div class="cobertura-icon"><i class="fa fa-map-marker"></i></div>
+					<h4>Zona Sul &amp; Centro</h4>
+					<p>Copacabana &middot; Ipanema &middot; Botafogo &middot; Flamengo &middot; Centro Histórico</p>
+				</div>
+
+				<div class="cobertura-card">
+					<div class="cobertura-icon"><i class="fa fa-map-marker"></i></div>
+					<h4>Zona Norte &amp; Baixada</h4>
+					<p>Tijuca &middot; Méier &middot; Madureira &middot; Municípios da Baixada Fluminense</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- ============================= DURACAO DO EVENTO ============================= -->
+	<section class="section-duracao">
+		<div class="container">
+			<div class="t-center">
+				<span class="tit2">Planejamento</span>
+				<h3 class="tit3 m-t-5 m-b-0" style="color:#fff;">Duração do Evento</h3>
+			</div>
+
+			<div class="duracao-box">
+				<div class="duracao-destaque">
+					<div class="duracao-num">5</div>
+					<div class="duracao-label">HORAS<br>DE SERVIÇO<br>CONTÍNUO</div>
+				</div>
+
+				<p class="duracao-desc">
+					Nossos pacotes de Buffet e Mão de Obra são calculados inicialmente para <strong>5 horas de serviço corrido</strong>, incluindo a chegada antecipada da equipe para montagem e preparação — tudo pronto antes mesmo de os convidados chegarem.
+				</p>
+
+				<div class="duracao-nota">
+					<i class="fa fa-clock-o"></i>
+					<p><strong>Precisa de mais tempo?</strong> A carga horária é totalmente flexível e pode ser adaptada de acordo com a necessidade do seu evento. Entre em contato e personalizamos o pacote ideal para você.</p>
 				</div>
 			</div>
 		</div>
@@ -230,17 +321,12 @@
 
 	<!-- Sign up -->
 	<div class="section-signup bg1-pattern p-t-85 p-b-85">
-
 		<form class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5">
-			<!-- Button3 -->
 			<button class="btn3 flex-c-m size20 txt6 trans-0-4 m-10">
-				<a href="contato.html" class="btn3 flex-c-m size20 txt6 trans-0-4 m-10">
-					Entre em contato
-				</a>
+				<a href="contato.html" class="btn3 flex-c-m size20 txt6 trans-0-4 m-10">Entre em contato</a>
 			</button>
 		</form>
 	</div>
-
 
 	<!-- Footer -->
 	<footer class="bg1">
@@ -251,15 +337,13 @@
 						<a href="contato.html" class="fs-15 c-white"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
 						<a href="https://www.instagram.com/buffet_explosao_de_sabores/" class="fs-15 c-white"><i class="fa fa-instagram m-l-18" aria-hidden="true"></i></a>
 					</div>
-
 					<div class="txt17 p-r-20 p-t-5 p-b-5">
-   						 &copy; 2026 Buffet Explosão de Sabores. Criado por <a href="https://colorlib.com" target="_blank" rel="noopener">Colorlib</a> e editado por Vértice Digital.
+						&copy; 2026 Buffet Explosão de Sabores. Criado por <a href="https://colorlib.com" target="_blank" rel="noopener">Colorlib</a> e editado por Vértice Digital.
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
-
 
 	<!-- Back to top -->
 	<div class="btn-back-to-top bg0-hov" id="myBtn">
@@ -268,49 +352,34 @@
 		</span>
 	</div>
 
-	<!-- Container Selection1 -->
 	<div id="dropDownSelect1"></div>
 
-	<!-- Modal Video 01-->
+	<!-- Modal Video 01 -->
 	<div class="modal fade" id="modal-video-01" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document" data-dismiss="modal">
-        <div class="close-mo-video-01 trans-0-4" data-dismiss="modal" aria-label="Close">&times;</div>
-        <div class="wrap-video-mo-01">
-            <div class="w-full wrap-pic-w op-0-0"><img src="images/icons/video-16-9.jpg" alt="IMG"></div>
-            <div class="video-mo-01">
-                <video src="videos/video-em-acao.mp4" controls></video>
-            </div>
-        </div>
-    </div>
-</div>
+		<div class="modal-dialog" role="document" data-dismiss="modal">
+			<div class="close-mo-video-01 trans-0-4" data-dismiss="modal" aria-label="Close">&times;</div>
+			<div class="wrap-video-mo-01">
+				<div class="w-full wrap-pic-w op-0-0"><img src="images/icons/video-16-9.jpg" alt="IMG"></div>
+				<div class="video-mo-01">
+					<video src="videos/video-em-acao.mp4" controls></video>
+				</div>
+			</div>
+		</div>
+	</div>
 
-
-
-<!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
 	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/daterangepicker/moment.min.js"></script>
 	<script type="text/javascript" src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/slick-custom.js"></script>
-<!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/parallax100/parallax100.js"></script>
-	<script type="text/javascript">
-        $('.parallax100').parallax100();
-	</script>
-<!--===============================================================================================-->
+	<script type="text/javascript">$('.parallax100').parallax100();</script>
 	<script type="text/javascript" src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/lightbox2/js/lightbox.min.js"></script>
-<!--===============================================================================================-->
 	<script src="js/main.js"></script>
 
 </body>
